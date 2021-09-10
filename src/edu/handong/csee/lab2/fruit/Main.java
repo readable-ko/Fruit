@@ -14,13 +14,21 @@ public class Main {
 		Fruit s2 = new Fruit(102,"Orange",1500);
 		fl.add(s2);
 		fl.add(new Fruit(103,"Kiwi",2000));
+		fl.add(new Fruit(104,"StrawBerry",2500));
+		fl.add(new Fruit(105,"Berry",3000));
+		fl.add(new Fruit(106,"WaterMelon",4000));
+		fl.add(new Fruit(107,"Melon",3500));
+		fl.add(new Fruit(108,"Mango",4500));
+		fl.add(new Fruit(109,"Durian",5000));
+		fl.add(new Fruit(110,"PineApple",5500));
+		
 		
 		Collections.sort(fl, new FruitComparator());
 		
 		for(Fruit s : fl) {
 			System.out.println(s.toString());
 		}
-		System.out.println("Fruit List (reverse ordered by name)");
+		System.out.println("\nFruit List (reverse ordered by name)");
 		
 		Collections.sort(fl,new FruitComparatorDesc());
 		
